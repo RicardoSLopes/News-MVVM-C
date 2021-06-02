@@ -13,6 +13,12 @@
 		2163815526655AB700F01425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2163815326655AB700F01425 /* Main.storyboard */; };
 		2163815726655ABA00F01425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2163815626655ABA00F01425 /* Assets.xcassets */; };
 		2163815A26655ABA00F01425 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2163815826655ABA00F01425 /* LaunchScreen.storyboard */; };
+		2163816C26655DA600F01425 /* ColorsConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163816B26655DA600F01425 /* ColorsConstant.swift */; };
+		2163816F26655DE300F01425 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163816E26655DE300F01425 /* NewsListViewController.swift */; };
+		2163817426655E8E00F01425 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163817326655E8E00F01425 /* Coordinator.swift */; };
+		2163817B2665601E00F01425 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163817A2665601E00F01425 /* NewsListView.swift */; };
+		2163817E2665642600F01425 /* NewsListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163817D2665642600F01425 /* NewsListTableView.swift */; };
+		21638181266565AD00F01425 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21638180266565AD00F01425 /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		2163815626655ABA00F01425 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2163815926655ABA00F01425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2163815B26655ABA00F01425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2163816B26655DA600F01425 /* ColorsConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsConstant.swift; sourceTree = "<group>"; };
+		2163816E26655DE300F01425 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		2163817326655E8E00F01425 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2163817A2665601E00F01425 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		2163817D2665642600F01425 /* NewsListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableView.swift; sourceTree = "<group>"; };
+		21638180266565AD00F01425 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,85 @@
 		2163814C26655AB700F01425 /* DesafioNoticias */ = {
 			isa = PBXGroup;
 			children = (
+				2163815B26655ABA00F01425 /* Info.plist */,
+				2163816226655B4300F01425 /* Resourses */,
+			);
+			path = DesafioNoticias;
+			sourceTree = "<group>";
+		};
+		2163816226655B4300F01425 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
 				2163814D26655AB700F01425 /* AppDelegate.swift */,
 				2163814F26655AB700F01425 /* SceneDelegate.swift */,
 				2163815126655AB700F01425 /* ViewController.swift */,
 				2163815326655AB700F01425 /* Main.storyboard */,
 				2163815626655ABA00F01425 /* Assets.xcassets */,
 				2163815826655ABA00F01425 /* LaunchScreen.storyboard */,
-				2163815B26655ABA00F01425 /* Info.plist */,
+				2163816326655B4C00F01425 /* Sources */,
 			);
-			path = DesafioNoticias;
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		2163816326655B4C00F01425 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2163816926655D7D00F01425 /* Infrastructure */,
+				2163816426655B5F00F01425 /* Controller */,
+				2163816526655B6A00F01425 /* Coordinator */,
+				2163816726655CD400F01425 /* Model */,
+				2163816826655D3000F01425 /* ViewModel */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2163816426655B5F00F01425 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2163816E26655DE300F01425 /* NewsListViewController.swift */,
+				2163817A2665601E00F01425 /* NewsListView.swift */,
+				2163817D2665642600F01425 /* NewsListTableView.swift */,
+				21638180266565AD00F01425 /* NewsTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2163816526655B6A00F01425 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2163817326655E8E00F01425 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2163816726655CD400F01425 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2163816826655D3000F01425 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2163816926655D7D00F01425 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				2163816A26655D8F00F01425 /* Constants */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		2163816A26655D8F00F01425 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2163816B26655DA600F01425 /* ColorsConstant.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +219,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2163816F26655DE300F01425 /* NewsListViewController.swift in Sources */,
 				2163815226655AB700F01425 /* ViewController.swift in Sources */,
+				2163817426655E8E00F01425 /* Coordinator.swift in Sources */,
+				2163817B2665601E00F01425 /* NewsListView.swift in Sources */,
 				2163814E26655AB700F01425 /* AppDelegate.swift in Sources */,
 				2163815026655AB700F01425 /* SceneDelegate.swift in Sources */,
+				2163817E2665642600F01425 /* NewsListTableView.swift in Sources */,
+				2163816C26655DA600F01425 /* ColorsConstant.swift in Sources */,
+				21638181266565AD00F01425 /* NewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Ricardo-Santana.DesafioNoticias";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Ricardo-Santana.DesafioNoticias";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
