@@ -14,6 +14,7 @@ class NewsListTableView: UIView {
     
     //MARK: Propertys
     var tableView = UITableView()
+    var newsViewModel: NewsViewModel?
     
     //MARK: Initialize
     override init(frame: CGRect) {
