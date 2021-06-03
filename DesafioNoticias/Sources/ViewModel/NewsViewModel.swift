@@ -18,7 +18,7 @@ class NewsViewModel {
         model.articles
     }
     
-    static func fetchdata(category: CategoryType, completion: @escaping(Result <NewsViewModel, Error>) -> Void){
+    static func fetchData(category: CategoryType, completion: @escaping(Result <NewsViewModel, Error>) -> Void){
         let manager: NewsManagerProtocol
     }
 }

@@ -12,7 +12,6 @@ public protocol Coordinator: AnyObject {
 }
 
 //utilizados em projetos com storyboard
-
 extension Coordinator {
     func getStoryBoard(NameStoryboard: String) -> UIStoryboard {
         let pathBundle: Bundle = .current

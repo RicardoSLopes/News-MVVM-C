@@ -9,18 +9,18 @@ import UIKit
 
 class NewsListViewController: UIViewController {
     
-    //MARK - Propertys
-    var newsListView: NewsListView(frame .zero)
+    //MARK: - Propertys
+    var newsListView = NewsListView(frame: .zero)
     
     
-    //MARK - DidLoad
+    //MARK: - DidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    func setView() {
-        self.view.backgroundColor = .backgroundColorDefault
+    func setView(viewModel: NewsViewModel) {
         self.title = "Lista de notícias" // hardcode
+        newsListView.setViewModel(viewModel: viewModel)
     }
     
     override func loadView() {
